@@ -18,7 +18,7 @@ withDefaults(defineProps<Props>(), {
     <AppShell variant="sidebar">
         <AppSidebar />
         <AppContent variant="sidebar"
-            class="overflow-x-hidden md:peer-data-[variant=inset]:m-0 md:peer-data-[variant=inset]:rounded-none">
+            class="flex flex-col h-svh overflow-hidden md:peer-data-[variant=inset]:m-0 md:peer-data-[variant=inset]:rounded-none">
             <AppSidebarHeader :breadcrumbs="breadcrumbs" />
             <slot />
         </AppContent>
